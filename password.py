@@ -1,11 +1,12 @@
 import random
 
+posschar = "abcdefghijklmnopqrstuvwxyz1234567890-=!@#$%^&*()_+"
+ranchar = random.choice(posschar)
 print("Want a random password?")
-symbol = input("Add Symbols? ")
-if input("yes")
-    symbol = ["@", "!", "$", "^", "#", "*"]
-    print(random+symbol)
-else
-    print(random.randint(10000000, 10000000000000))
-
-poschar = "abcdefghijklmnopqrstuvwxyz1234567890-=!@#$%^&*()_+"
+charcount = int(input("How many characters?: "))
+if charcount<1:
+    print("Please choose an actual amount")
+    charcount = int(input("How many characters?: "))
+else:
+    for i in range(charcount):
+        print(ranchar)
