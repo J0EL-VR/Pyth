@@ -24,4 +24,4 @@ while True:
             print(num1/num2)
         break
     except ValueError:
-        print("please input two numbers")
+        print("Please input two numbers!")

@@ -7,7 +7,7 @@ countupper = int(input("How many uppercase characters?: "))
 countnum = int(input("How many numeral characters?: "))
 countsymb = int(input("How many special characters?: "))
 
-while countlower < 1 or countupper < 1 or countnum < 1 or countsymb < 1:
+while countlower < 0 or countupper < 0 or countnum < 0 or countsymb < 0:
     print("Please choose an actual amount")
     countlower = int(input("How many lowercase characters?: "))
     countupper = int(input("How many uppercase characters?: "))
